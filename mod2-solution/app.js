@@ -29,7 +29,7 @@
 			{ name: "ice cream bars", quantity: 5 },
 			{ name: "bottles of water", quantity: 2 },
 			{ name: "eggs", quantity: 10 },
-			{ name: "yogurt", quantity: 2 }
+			{ name: "chocolates", quantity: 2 }
 		];
 		var boughtItems = [];
 
