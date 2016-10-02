@@ -1,0 +1,27 @@
+<table class="table">
+	<thead>
+		<tr>
+			<th>Short Name</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- Display message if the foundItems list is empty -->
+		<tr ng-if="foundItems.length === 0">
+			<td colspan="4">
+				<p class="alert alert-warning">
+					Nothing found!
+				</p>
+			</td>
+		</tr>
+		<!-- Display foundItems list -->
+		<tr ng-repeat="item in foundItems">
+			<td>{{item.short_name}}</td>
+			<td>{{item.name}}</td>
+			<td>{{item.description}}</td>
+			<td><a href="" class="btn btn-default" ng-click="onRemove({index: $index})">Don't want this one!</a></td>
+		</tr>
+	</tbody>
+</table>
