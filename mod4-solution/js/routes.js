@@ -40,13 +40,7 @@
 						return MenuDataService.getItemsForCategory($stateParams.shortName)
 						.then(function(response){
 							var items = response.data.menu_items;
-							var filteredItems = [];
-							angular.forEach(items, function(item){
-								if(item.short_name.startsWith($stateParams.shortName)){
-									filteredItems.push(item);
-								}
-							});
-							return filteredItems;
+							return items;
 						});
 					}]
 			}
